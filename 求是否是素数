@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	printf("请输入一个大于2的整数:\n");
+	scanf("%d",&x);
+	for(y=2;y<=x;y++)//判断条件（一定要理解）
+	{
+		if(x%y==0)
+		break;	
+	}
+	if(y==x)printf("%d是素数\n",x);
+	if(y<x)printf("%d不是素数，能被%d整除\n",x,y);
+		return 0;
+} 
